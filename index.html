@@ -16,12 +16,12 @@
             <h1>Опросник для любителей котиков</h1>    
             <div class="questionnaire">
                 <form id="questionnaireFormId" class="questionnaire__form">
-                    <input type="text" id="owner-name" class="plain-input" placeholder="ФИО хозяина" required pattern="^[a-zA-Zа-яА-Я -]+$">
-                    <input type="text" id="cat-name" class="plain-input" placeholder="Кличка кота" required pattern="^[a-zA-Zа-яА-Я -]+$">
+                    <input type="text" id="owner-name" name="owner-name" class="plain-input" placeholder="ФИО хозяина" required pattern="^[a-zA-Zа-яА-Я -]+$">
+                    <input type="text" id="cat-name" name="cat-name" class="plain-input" placeholder="Кличка кота" required pattern="^[a-zA-Zа-яА-Я -]+$">
                     <fieldset>
                         <legend>Дата рождения котика:</legend>
                         <div class="fieldset__box">
-                            <input type="date" id="cat-birthday" required>
+                            <input type="date" id="cat-birthday" name="cat-birthday" required>
                         </div>
                     </fieldset>
                     <fieldset>

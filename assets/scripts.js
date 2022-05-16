@@ -38,8 +38,7 @@ buttonElem.addEventListener( "click", (event) => {
 
     // отправка формы
     let formElem = document.getElementById("questionnaireFormId");
-    console.log("form " + formElem);
-    // event.preventDefault();
+    event.preventDefault();
 
     fetch("https://httpbin.org/post",
                 {
@@ -47,11 +46,8 @@ buttonElem.addEventListener( "click", (event) => {
                     body: new FormData(formElem)
                 })
                 .then(response => response.json())
-                .then(user => {
-                    console.log("user " + user);
-                    for ( let i in user ) {
-                        console.log("i " + i + " -- " + user[i]);    
-                    }
+                .then(result => {
+                    console.log("user " + result);
                 })
                 .catch(error => console.log("error " + error)
     );
