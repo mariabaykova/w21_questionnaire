@@ -1,0 +1,62 @@
+html,
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+input:required:valid {
+    border-color: green;
+}
+
+input:required:invalid {
+    border-color: red;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 215, 221);
+}
+
+.main {
+    margin-top: 10px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.questionnaire {
+    width: 70%;
+    margin-top: 10px;
+    border: 1px black solid;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 10px;
+    /* row-gap: 5px; */
+}
+
+.questionnaire__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.plain-input {
+    width: 40%;
+}
+
+.footer {
+    height: 80px;
+    background-color: aliceblue;
+}

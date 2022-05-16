@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Опросник для любителей котиков</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            header
+        </div>
+        <div class="main">
+            <h1>Опросник для любителей котиков</h1>    
+            <div class="questionnaire">
+                <form id="questionnaireFormId" class="questionnaire__form">
+                    <input type="text" id="owner-name" class="plain-input" placeholder="ФИО хозяина" required pattern="^[a-zA-Zа-яА-Я -]+$">
+                    <input type="text" id="cat-name" class="plain-input" placeholder="Кличка кота" required pattern="^[a-zA-Zа-яА-Я -]+$">
+                    <fieldset>
+                        <legend>Дата рождения котика:</legend>
+                        <div class="fieldset__box">
+                            <input type="date" id="cat-birthday" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Пол котика:</legend>
+                        <div class="fieldset__box">
+                            <input type="radio" id="cat-gender-male" name="cat-gender" value="male" checked>
+                            <label for="cat-gender-male">Мужской</label>                            
+                        </div>
+                        <div class="fieldset__box">
+                            <input type="radio" id="cat-gender-female" name="cat-gender" value="female">
+                            <label for="cat-gender-female">Женский</label>                            
+                        </div>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Марка корма:</legend>
+                        <div class="fieldset__box">
+                            <select name="food-brand" id="food-brand">
+                                <option value="purina" selected>Purina</option>                        
+                                <option value="nd">ND</option>                        
+                                <option value="royal-canine">Royal Canine</option>                        
+                                <option value="wiskas">Wiskas</option>                        
+                            </select>              
+                        </div>
+                    </fieldset>
+                    <button type="submit" id="questionnaire__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    <script src="./assets/scripts.js"></script>
+</body>
+</html>
